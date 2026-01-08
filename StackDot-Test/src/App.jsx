@@ -12,7 +12,7 @@ function App() {
   }
 
   const handleDeleteStudent = (index) => {
-    setStudents(students.filter((id) => id !== index));
+    setStudents(students.filter((_, id) => id !== index));
   }
 
   const handleSearchInput = (e) => {
